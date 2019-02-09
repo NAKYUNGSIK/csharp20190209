@@ -11,7 +11,7 @@ namespace Day1
         Monday=11, Thesday, Wednesday, Thursday, Friday, Saturday, Sunday=Monday +100
     }
 
-    public class EnumTest 
+    public class EnumTest { 
 
         static void Main() {
 
