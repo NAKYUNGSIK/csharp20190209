@@ -9,7 +9,7 @@ namespace PulsMinusTrest
             Console.WriteLine(3 + 3);
             Console.WriteLine(3 + .3);
             Console.WriteLine("3" + "3");
-            Console.WriteLine(3.0 + "3");
+            Console.WriteLine(3.5 + "3"); //3.5문자로 변환 후 concate ==> 3.53
 
             Console.WriteLine(!true);
 
