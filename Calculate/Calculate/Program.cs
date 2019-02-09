@@ -21,9 +21,9 @@ namespace 사칙연산
             int first, second;
             try
             {
-                first = int.Parse(strarr[0]);  //여기 채워주세요 ;
-                second = int.Parse(strarr[1]) ;   //여기 채워주세요 ;
-}
+                first = int.Parse(strarr[0]);  //str을 int로 변환 
+                second = int.Parse(strarr[1]) ;   //str을 int 변환
+            }
             catch
             {
                 Console.WriteLine("입력이 잘못되었습니다.");
@@ -48,7 +48,8 @@ namespace 사칙연산
                 case "/":
                     result = first / second; break;
 
-                    //여기 채워주세요
+                default:
+                    result = -111; break;
             }
             return result;
         }
