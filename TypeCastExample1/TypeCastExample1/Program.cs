@@ -7,6 +7,7 @@ namespace TypeCastExample1
     {
         public static  void Main()
         {
+            Console.WriteLine(default(int));
             int iSize = sizeof(int);
             Console.WriteLine("int형 바이트길이 : {0}", iSize);
 
