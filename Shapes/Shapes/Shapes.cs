@@ -7,7 +7,7 @@ namespace Shapes
     {
         double radius;
 
-        public Circle(double radius =0) //생성자
+        public Circle(double radius = 0) //생성자
         {
             this.radius = radius;
         }
