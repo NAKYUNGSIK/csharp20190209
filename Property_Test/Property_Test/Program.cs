@@ -5,7 +5,7 @@ namespace Property_Test
     class Emp : Object   {
 
         private  int empno;
-
+/*
         public void SetEmpno(int empno) //Setter
         {
             this.empno = empno;  // this.empno = private int empno 이고 empno = SetEmpno(int empno) 
@@ -14,6 +14,19 @@ namespace Property_Test
         public int GetEmpno() //Getter
         {
             return this.empno;
+        }
+*/
+        public int Empno  //위 주석과 같음.  일반 속성(=Property) 이라 명명함.
+        {
+            get
+            {
+                return this.empno;
+            }
+
+            set
+            {
+                this.empno = value;
+            }
         }
 
         public override string ToString()  // override 는 재정의
