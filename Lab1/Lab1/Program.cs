@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Lab1
 {
@@ -12,10 +8,10 @@ namespace Lab1
         {
             int i = 1;
             int m;
-            while (i <=5)
+            while (i <= 5)
             {
-                m = 2 * i;
-                Console.Write(m + " " );
+                m = (2 * i) - 1;
+                Console.Write(m + " ");
                 i++;
             }
 
