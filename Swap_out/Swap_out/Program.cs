@@ -8,7 +8,7 @@ namespace ConsoleApplication2
     {
         //초기화안된 배열을 받아서 초기화
         //out 매개변수의 경우 초기화시킨 배열을 넘길 수도 있다.
-        static void FillArray1(out int[] arr)
+        static  void FillArray1(out int[] arr)
         {
             //배열 초기화
             arr = new int[3] { 5919, 4790, 4791 };
@@ -27,14 +27,20 @@ namespace ConsoleApplication2
             FillArray1(out onjArray);
             //배열출력
             Console.WriteLine("배열(out parameter) : ");
-            for (int i = 0; i < onjArray.Length; i++) { Console.Write(onjArray[i] + " "); }
-            Console.WriteLine("Press Any Key to Next"); Console.ReadKey();
+            for (int i = 0; i < onjArray.Length; i++)
+            { Console.Write(onjArray[i] + " "); }
+
+            Console.WriteLine("Press Any Key to Next");
+            Console.ReadKey();
             FillArray2(ref onjArray);
+
             //배열출력
             Console.WriteLine("배열(ref parameter) : ");
             for (int i = 0; i < onjArray.Length; i++)
             { Console.Write(onjArray[i] + " "); }
-            Console.WriteLine("Press Any Key to Next"); Console.ReadKey();
+
+            Console.WriteLine("Press Any Key to Next");
+            Console.ReadKey();
             FillArray2(ref onjArray);
         }
     }
