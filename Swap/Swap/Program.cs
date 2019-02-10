@@ -3,7 +3,7 @@ namespace ConsoleApplication2
 {
     class Program
     {
-        public void Swap(int a, int b)
+        static void Swap(ref int a, ref int b)
         {
             int tmp = a; a = b; b = tmp;
         }
@@ -11,7 +11,7 @@ namespace ConsoleApplication2
         {
             int a = 10; int b = 20;
             Console.WriteLine("a={0}, b={1}", a, b);
-            Swap(a, b);
+            Swap(ref a, ref b);
             Console.WriteLine("a={0}, b={1}", a, b);
         }
     }
