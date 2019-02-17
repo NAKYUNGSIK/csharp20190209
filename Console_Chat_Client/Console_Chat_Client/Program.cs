@@ -10,7 +10,7 @@ class ServerHandler
     {
         this.reader = reader;
     }
-    //서버에서 불특정하게 날아오는 다른 Client가 쓴 내용을
+    //서버에서 불특정하게 날아오는 다른 Client가 쓴 내용을 받기
     //받기 위해 클라이언트의 글읽는 부분을 쓰레드로 처리
     public void chat()
     {
